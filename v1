@@ -1,0 +1,20 @@
+#-------------------------------------------------------------------------------
+ 
+import random
+#program that plays PSR
+GAME = ["paper", "scissors","rock"]
+ 
+play_again = "y"
+ 
+while play_again =="y":
+ #let user play psr with program
+ print("Hi! This program lets you play a game of PSR with me!")
+ print("Paper, Scissors, Rock")
+ input()
+#print random answer
+print ("I chose: ")
+random_answer = random.choice(GAME)
+print(random_answer)
+#ASK USER IF THEY WANT TO PLAY ANOTHER round
+print("Would you like to play another round? y/n")
+play_again = input()

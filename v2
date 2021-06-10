@@ -1,0 +1,26 @@
+#-------------------------------------------------------------------------------
+# Name: Paper, Scissors, Rock
+# Purpose: Paper, Scissors, Rock
+# Author: Ronika
+# Created: 30/04/21
+# Copyright:  no copyright
+
+#-------------------------------------------------------------------------------
+
+import random
+#program that plays PSR
+GAME = ["paper", "scissors","rock"]
+print("Hi! This program allows users to play a game of PSR! To start type yes")
+start_game = "yes"
+while start_game == "yes":
+    input()
+    print("Paper, Scissors, Rock")
+    input()
+    #print random answer
+    random_answer=random.choice(GAME)
+    print(random_answer)
+
+play_again ="y"
+while play_again =="y":
+    print("Would you like to play another round? y/n")
+    play_again = input()
